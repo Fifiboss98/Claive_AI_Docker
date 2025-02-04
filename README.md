@@ -25,7 +25,9 @@ $ docker-compose up --build -d
 ```
 
 This will build the image and the "-d" will spin up the container as a daemon (basically it will be running in the background).
+
 Please note that this command require some time to complete.
+
 Also make sure that you have a reliable internet connection.
 
 
@@ -38,7 +40,9 @@ $ python secret_ai_getting_started.py
 ```
 
 By default, Docker will stop the container after printing the bot response.
+
 To prevent that behaviour you can replace the modified version of the secret_ai_getting_started.py file in your working directory.
+
 Then you can chat with the bot directly in the terminal.
 
 ---
