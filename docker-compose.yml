@@ -1,0 +1,8 @@
+services:
+  chat:
+    build: .
+    container_name: secret_agent
+    environment:
+      - SECRET_AI_API_KEY=bWFzdGVyQHNjcnRsYWJzLmNvbTpTZWNyZXROZXR3b3JrTWFzdGVyS2V5X18yMDI1
+
+    command: bash -c 'python secret_ai_getting_started.py'
