@@ -5,14 +5,13 @@ If you run this command and get:
 $ python secret_ai_getting_started.py
 ModuleNotFoundError: No module named 'secret_ai_sdk'
 
-```bash
-
+```
 it probably means that your Windows system lacks a particular package called "pkg-config".
 
 There are many solutions to this problem but the easiest one in my opinion is to run the bot inside a Docker container.
 ---
 
-## 📋 How to?
+## 📋 Build the container
 - First of all, make sure to have Docker installed and running.
 
 
@@ -23,7 +22,7 @@ There are many solutions to this problem but the easiest one in my opinion is to
 ```bash
 $ docker-compose up --build -d
 
-```bash
+```
 
 This will build the image and the "-d" will spin up the container as a daemon (basically it will be running in the background).
 Please note that this command require some time to complete.
@@ -36,7 +35,7 @@ $ docker-compose exec chat bash
 
 $ python secret_ai_getting_started.py
 
-```bash
+```
 
 By default, Docker will stop the container after printing the bot response.
 To prevent that behaviour you can replace the modified version of the secret_ai_getting_started.py file in your working directory.
